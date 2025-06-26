@@ -49,11 +49,12 @@ abstract class AppStrings {
   static const placeOrder = 'Place order';
   static const confirm = 'Confirm';
   static const orderSummary = 'Order summary';
-  static const productsRetrievedSuccessfully =
-      'Products retrieved successfully!';
+  static const productsRetrievedSuccessfully = 'Products retrieved successfully!';
+  static const productsUploadedSuccessfully = 'Products uploaded successfully!';
 }
 
 abstract class ErrorStrings {
   static const actionNotPossible = 'Action not possible.';
   static const itemAddedToCart = 'Item has been added to cart';
+  static const somethingWentWrong = 'Hey! Something went wrong. Try again.';
 }

@@ -50,9 +50,13 @@ class OrderDetailTile extends ConsumerWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                model.name,
-                style: AppTextStyles.body4RegularPoppins(context),
+              SizedBox(
+                width: 100.aw,
+                child: Text(
+                  model.name,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTextStyles.body4RegularPoppins(context),
+                ),
               ),
               Text(
                 AppStrings.calAmount(model.calories),

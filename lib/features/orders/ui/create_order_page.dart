@@ -27,6 +27,7 @@ class _CreateOrderPageState extends ConsumerState<CreateOrderPage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      ref.read(cartNotifier.notifier).clearProducts();
       ref.read(cartNotifier.notifier).retrieveVegetables(context);
       ref.read(cartNotifier.notifier).retrieveMeats(context);
       ref.read(cartNotifier.notifier).retrieveCarbs(context);

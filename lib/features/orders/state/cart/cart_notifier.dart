@@ -18,7 +18,7 @@ class CartNotifier extends Notifier<CartVM> {
   @override
   CartVM build() => CartVM();
 
-  void clearProducts() => state = state.copyWith(summaryList: const []);
+  void clearProducts() => state = state.copyWith(summaryList: const [], totalCalories: 0, totalCost: 0,);
 
   Future<void> retrieveVegetables(BuildContext context) async {
     state = state.copyWith(isLoading: true);
@@ -232,7 +232,8 @@ class CartNotifier extends Notifier<CartVM> {
     state = state.copyWith(orderList: interimList.toList());
 
     bool result = await OrderSummaryApi().postOrderSummary(
-      OrderListRequest(items: state.orderList),
+      context: context,
+      request: OrderListRequest(items: state.orderList),
     );
 
     if (result) {
