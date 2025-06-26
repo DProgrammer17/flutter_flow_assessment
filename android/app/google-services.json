@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "639342117186",
+    "project_id": "flutterflowassessment-e5572",
+    "storage_bucket": "flutterflowassessment-e5572.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639342117186:android:12f87455e56a483bb108db",
+        "android_client_info": {
+          "package_name": "com.example.flutter_flow_assessment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYbrZ0IMlaECIcmSxU_TJZ5DVOdrW_6pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

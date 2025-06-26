@@ -1,0 +1,1 @@
+enum ProductCategory{vegetables, meats, carbs}
